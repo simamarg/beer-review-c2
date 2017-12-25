@@ -21,18 +21,27 @@
         <h3>Add a New Beer</h3>
 
         <div class="form-group">
-          <input type="text"
-            class="beer-input form-control"
-            placeholder="Beer Name">
+          <input type="text" class="beer-input form-control" placeholder="Beer Name">
         </div>
         
         <div class="form-group">
-          <input type="text"
-            class="category-input form-control"
-            placeholder="Category">
+          <input type="text" class="category-input form-control" placeholder="Category">
         </div>
         
+        <div class="form-group">
+          <label for="rating">Rate the beer (select one option below):</label>
+          <select class="form-control" id="rating">
+            <option value="0">0 - Terrible</option>
+            <option value="1">1 - Bad</option>
+            <option value="2">2 - Not that good</option>
+            <option value="3">3 - OK</option>
+            <option value="4">4 - Good</option>
+            <option value="5">5 - Exellent</option>
+          </select>
+        </div>
+
         <button class="btn btn-primary post-beer" type="button">Post</button>
+        <button class="btn btn-primary sort-beer" type="button">Sort from worst to best</button>
       </form>
     </div>
   </div>
