@@ -37,6 +37,7 @@ function sortDescending() {
 $('.post-beer').click(function () {
     addBeer($('.beer-input').val(), $('.category-input').val(), $('#rating').val());
     renderBeers();
+    // clear form fields
     $('.beer-input').val("");
     $('.category-input').val("");
     $('#rating').val("0");
@@ -47,11 +48,11 @@ $('.sort-beer').click(function () {
         sortAscending();
         renderBeers();
         isSortedAscending = true;
-        $('.sort-beer').html("Sort from best to worst");
+        $('.sort-beer').html("Sort from best to worst"); // change the text on the sorting button
     } else {
         sortDescending();
         renderBeers();
         isSortedAscending = false;
-        $('.sort-beer').html("Sort from worst to best");
+        $('.sort-beer').html("Sort from worst to best"); // change the text on the sorting button
     }
 });
